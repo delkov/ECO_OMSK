@@ -1,0 +1,32 @@
+<center> 
+
+    <highchart id="chart1" config="chartConfig" class="grid"></highchart>
+
+<div style="height:50px;"></div>
+
+<form class="form-inline">
+  <label for="rg-from">Превышение уровня шума:   </label> &nbsp;	
+  <div class="form-group" >
+    <input type="number" ng-model= "restrict_noise_level" id="rg-from" name="rg-from" value="" class="form-control" min="0" max="100" style="width:70px;">
+  </div>
+  <!-- rest of form -->
+</form>
+<!-- <button ng-click="download_noise_stats()">Click!</button> -->
+    <highchart id="chart2" config="chartConfig2" class="grid"></highchart>
+
+
+<div style="height:20px;"></div>
+
+     <!-- <font size=5px> Select the noise level:</font> -->
+
+
+
+<!-- <div class="form-group" style="height:20px; width:70px;">
+  <label class='rg-from' for="usr">Name:</label>
+   <input class="form-control" type="number" ng-model="restrict_noise_level" name="input" ng-model="level" min="0" max="99">
+</div> -->
+
+
+
+
+</center>

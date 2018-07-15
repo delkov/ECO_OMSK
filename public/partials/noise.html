@@ -1,0 +1,169 @@
+
+
+  <body>
+
+
+
+        <div class="row" style="margin-left: 40px; max-width: 95%;">
+
+<div class="form-group col-xs-12" style="height:20px; width:250px;"
+     moment-picker="datepicker_from"
+     locale="ru"
+     format="YYYY-MM-DD HH:mm:ss">
+
+
+    <input class="form-control" onkeydown="return false"
+
+           placeholder="Select date: From"
+           ng-model="datepicker_from"
+           ng-model-options="{ updateOn: 'blur' }">
+</div>
+
+
+
+<div class="form-group col-xs-6" style="height:20px; width:250px;"
+     moment-picker="datepicker_to"
+     locale="ru"
+     format="YYYY-MM-DD HH:mm:ss">
+      <!-- REMOVE KEYBORD INPUT onkeydown="return false" -->
+    <input class="form-control" onkeydown="return false"  
+           placeholder="Select date: To"
+           ng-model="datepicker_to"
+           ng-model-options="{ updateOn: 'blur' }">
+</div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <div class="form-group col-xs-6" style="height:20px; width:100px;"> -->
+
+
+<!-- <div class="container"> -->
+  <!-- <div class="row"> -->
+
+
+
+
+<!-- 
+       <label> Unique: </label>
+<input type="checkbox"
+       ng-model="string"
+       name="Unique">
+        -->
+
+
+    <div class="col-xs-1">
+    <input class="form-control" type="number" name="input" ng-model="level_from" min="0" max="99">
+    </div>  
+
+    <div class="col-xs-1">
+    <input class="form-control" type="number" name="input" ng-model="level_to" min="0" max="99">
+    </div>
+
+    <div class="col-xs-1">
+    <input class="form-control" type="number" name="input" ng-model="max_distance" min ="0">
+    </div>
+
+    <div class="col-xs-1" style="width:145px">
+<label> Уник. записи: </label>
+<input type="checkbox"
+       ng-model="unique_noise">       
+
+    </div>
+
+
+  <!-- </div> -->
+  <!-- </div> -->
+<!-- <div class="container">
+ <div class="row">
+ <div class="col">
+    <input class="form-control" type="number" name="input" ng-model="level_from" min="0" max="99">
+</div>
+    <div class="col">
+        <input class="form-control" type="number" name="input" ng-model="level_to" min="0" max="99">
+</div>
+</div>
+</div>
+
+ -->
+    
+
+    <div class="col-xs-1">
+
+ <button ng-click="fill_table()" class="btn btn-primary">OK</button>
+</div>
+
+
+
+
+
+    <div class="col-xs-1">
+    <input class="form-control" type="number" name="input" ng-model="track_number" min ="0">
+    </div>
+    <div class="col-xs-1">
+    <button ng-click="fill_noise_table_by_track()" class="btn btn-primary">OK</button>
+    </div>
+
+
+</div>
+
+
+
+
+<div style="height:50px;"></div>
+
+
+    <!-- <div class="container"> -->
+            <!-- <div class="col-md-12 col-centered"> -->
+
+      <div ui-grid="gridOptions" ui-grid-selection ui-grid-exporter class="grid2"></div>
+      <!-- <div ui-grid="gridOptions" class="grid2"></div> -->
+<!-- </div> -->
+
+
+
+        <!-- </div> -->
+
+
+<center>
+<!-- <div class="grid"> -->
+    <highchart id="chart" config="chartConfig" class="grid"></highchart>
+    <!-- </div> -->
+</center>
+
+
+
+</body>
+
+
+
+
+
+
+    <!-- <nvd3 options="options" data="data"></nvd3> -->
+
+<!-- </center> -->
+
+<!--         <div class="well grid-loading" ng-show="grid.rows.length == 0">
+          <i class="fa fa-spin fa-spinner"></i>
+          <strong>Data Loading...</strong>
+        </div> -->
+
+<!-- </div> -->
+<!-- </div> -->
+
+
+
+      <!-- <div id="grid1" ui-grid="{data:gridOptions.data}" ui-grid-exporter ui-grid-selection class="grid"></div> -->
+      <!-- <div ng-if='columnChanged'> -->
+        <!-- Column Visibility Changed - name: {{ columnChanged.name }} visible: {{ columnChanged.visible }} -->
+      <!-- </div> -->

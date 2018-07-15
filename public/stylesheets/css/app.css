@@ -1,0 +1,100 @@
+/*.top-buffer{
+    margin-top:10px;
+}
+
+.movietable tr td:nth-child(2){
+    width: 150px;
+}
+
+.movietable tr:nth-child(1) td{
+    border-top: none;
+}
+a.nodecoration{
+    text-decoration:none;
+}
+*/
+
+.i-am-centered { margin: auto;}
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+
+
+
+/*.ui-grid-header-cell {float: left;}*/
+
+
+/*.ui-grid-header-cell {float: left;}*/
+
+/*.ui-grid-header-cell {float: left;}*/
+
+.grid {
+    width: 80%;
+    height:10%;
+
+    /*position: absolute;*/
+    /*top:10px;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*margin: auto;*/
+    /*width: 1500px;*/
+    /*height: 1500px;*/
+    /*background-color: blue;*/
+
+    /*min-width: 1500px !important;*/
+    /*border: 25px solid green;*/
+    /*padding: 25px;*/
+    /*margin: 25px;*/
+
+}
+
+.grid2 {
+    width: 95%;
+    /*height:78vh;*/
+    height:45vh;
+    /*border: 25px solid green;*/
+    /*padding: 25px;*/
+    /*margin: 25px;*/
+    
+}
+
+
+
+.grid3 {
+    width: 95%;
+    height:78vh;
+    /*height:45vh;*/
+    /*border: 25px solid green;*/
+    /*padding: 25px;*/
+    /*margin: 25px;*/
+    
+}
+
+
+
+highchart {
+  display: block;
+  width: 200%;
+  /*max-width: 100%;*/
+}
+/*
+
+.ui-grid-header-cell {
+
+    min-width: 200px !important;
+    max-width: 300px !important;
+
+}
+*/

@@ -1,0 +1,83 @@
+  <body>
+
+
+
+<div class="row" style="margin-left: 40px; max-width: 95%;">
+
+<div class="form-group col-xs-12" style="height:20px; width:250px;"
+     moment-picker="datepicker_from"
+     format="YYYY-MM-DD HH:mm:ss">
+    <!-- <span class="input-group-addon"> -->
+        <!-- <i class="octicon octicon-calendar"></i> -->
+    <!-- </span> -->
+    <input class="form-control"
+           locale="ru"
+           placeholder="Select date: From"
+           ng-model="datepicker_from"
+           ng-model-options="{ updateOn: 'blur' }">
+</div>
+
+
+
+<div class="form-group col-xs-6" style="height:20px; width:250px;"
+     moment-picker="datepicker_to"
+     format="YYYY-MM-DD HH:mm:ss">
+
+    <!-- <span class="input-group-addon"> -->
+        <!-- <i class="octicon octicon-calendar"></i> -->
+    <!-- </span> -->
+    <input class="form-control"
+           locale="ru"
+           placeholder="Select date: To"
+           ng-model="datepicker_to"
+           ng-model-options="{ updateOn: 'blur' }">
+</div>
+        
+
+
+<div class="col-xs-1">
+ <button ng-click="fill_tracks_table()" class="btn btn-primary">OK</button>
+</div>
+
+<!-- 
+    <div class="col-xs-1" >
+    <input class="form-control" style="width:250px;" type="number" name="input" ng-model="track">
+    </div>  
+    <button ng-click="fill_tracks_table()" class="btn btn-primary">Click</button>
+
+ -->
+
+
+
+
+
+
+
+
+<div class="form-group col-xs-6" style="height:20px; width:250px;"
+     >
+    <input class="form-control"
+           type="number"
+           placeholder="Select track number"
+           ng-model="track"
+           ng-model-options="{ updateOn: 'blur' }">
+</div>
+        
+<div class="col-xs-1">
+ <button ng-click="fill_tracks_table_by_track_number()" class="btn btn-primary">OK</button>
+</div>
+
+
+
+</div>
+
+
+
+
+<div style="height:50px;"></div>
+
+      <div ui-grid="gridOptions" ui-grid-selection ui-grid-exporter class="grid3"></div>
+
+</body>
+
+
